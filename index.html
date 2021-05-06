@@ -174,7 +174,9 @@
 		</section>
 		<section id="contacts" class="contacts">
 			<div class="contacts__container _container">
-				<h2 class="contacts__title">КОНТАКТЫ</h2>
+				<div class="contacts__text">
+					<h2 class="contacts__title">Контакты</h2>
+				</div>
 				<div class="contacts__block block-contacts">
 					<div class="block-contacts__map" data-aos="zoom-out-left">
 						<iframe
@@ -217,8 +219,9 @@
 				</h2>
 				<form class="form__content" action="#">
 					<div class="form__inputs">
-						<input data-aos="fade-left" type="text" class="form__input" placeholder="Ваш вопрос:">
-						<input data-aos="fade-right" type="text" class="form__input" placeholder="Телефон">
+						<input data-aos="fade-left" type="text" class="form__input" placeholder="Ваш вопрос:" name="name"
+							required>
+						<input data-aos="fade-right" type="tel" class="form__input" placeholder="Телефон" name="tel" required>
 					</div>
 					<button class="button form__button">ОСТАВИТЬ ЗАЯВКУ</button>
 				</form>
@@ -270,8 +273,8 @@
 					<form action="#" class="popup__form form">
 						<h3 class="form__title popup__title">Форма заявки</h3>
 						<p class="form__subtitle popup__subtitle">Подзаголовок заявки</p>
-						<input class="form__input popup__input" type="text" placeholder="Полное Имя">
-						<input class="form__input popup__input" type="text" placeholder="Номер телефона">
+						<input class="form__input popup__input" type="text" name="name" required placeholder="Полное Имя">
+						<input class="form__input popup__input" type="tel" name="tel" required placeholder="Номер телефона">
 						<input class="form__input popup__input" type="text" placeholder="E-mail">
 						<button class="button form__button popup__button">Отправить</button>
 					</form>
