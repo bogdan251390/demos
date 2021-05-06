@@ -1269,6 +1269,11 @@ body {
     border: 5px solid #fff;
   }
 
+  .info-contacts__text {
+    max-width: none;
+    margin-bottom: 0;
+  }
+
   .form__title {
     font-size: 35px;
   }
@@ -1490,6 +1495,10 @@ body {
     text-align: center;
   }
 
+  .section-title {
+    font-size: 30px;
+  }
+
   .block-about__text::before {
     width: 300px;
   }
@@ -1510,6 +1519,22 @@ body {
     right: 190px;
     max-width: 150px;
     max-height: 100px;
+  }
+
+  .project__titles {
+    font-size: 30px;
+  }
+
+  .project__titles::before {
+    width: 90px;
+    height: 25px;
+    right: -1px;
+    top: 40px;
+    border: 3px solid #ff8105;
+  }
+
+  .contacts__title {
+    font-size: 30px;
   }
 
   .info-contacts__logo {
@@ -1561,6 +1586,14 @@ body {
 
   .footer__list {
     text-align: center;
+  }
+
+  .footer__button {
+    font-size: 15px;
+  }
+
+  .footer__policy {
+    font-size: 15px;
   }
 }
 
@@ -1648,10 +1681,6 @@ body {
   .about {
     padding-top: 50px;
     padding-bottom: 50px;
-  }
-
-  .section-title {
-    font-size: 30px;
   }
 
   .block-about__text::before {
