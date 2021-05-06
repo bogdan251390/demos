@@ -911,6 +911,7 @@ body {
 
 .footer__buttom {
   text-align: center;
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer__policy {
