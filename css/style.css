@@ -555,25 +555,23 @@ body {
 }
 
 .project__container {
-  position: relative;
   text-align: center;
+}
+
+.project__row {
+  position: relative;
 }
 
 .project__titles {
   position: relative;
   font-family: 'Bebas Neue Bold';
   color: #fdfdfd;
-  position: absolute;
-  top: 30px;
   font-size: 76px;
   line-height: 91px;
   font-weight: 700;
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.34);
+  margin-bottom: 60px;
   z-index: 4;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-      -ms-transform: translate(-50%);
-          transform: translate(-50%);
 }
 
 .project__titles::before {
@@ -593,6 +591,79 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.project__block-title {
+  margin-bottom: 120px;
+  text-align: center;
+}
+
+.swiper-container {
+  z-index: 1;
+}
+
+.project {
+  position: relative;
+  background: url("../img/project/project_bg.jpg") center no-repeat;
+  background-size: cover;
+  padding-top: 90px;
+  padding-bottom: 200px;
+}
+
+.project__titles {
+  display: inline;
+}
+
+.project__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: -1;
+}
+
+.slide-project__item {
+  max-width: 400px;
+  background-color: #fff;
+}
+
+.slide-project__image {
+  max-width: 400px;
+}
+
+.slide-project__buton {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 20px 60px;
+}
+
+.arrow-rightes {
+  position: absolute;
+  background: url("../img/arrow-right.png") 0 0 no-repeat;
+  z-index: 40;
+  width: 37px;
+  height: 33px;
+  display: inline-block;
+  top: 50%;
+  right: -40px;
+  cursor: pointer;
+}
+
+.arrow-nextes {
+  position: absolute;
+  background: url("../img/arrow-right.png") 0 0 no-repeat;
+  z-index: 10;
+  width: 37px;
+  height: 33px;
+  display: inline-block;
+  top: 50%;
+  left: -40px;
+  -webkit-transform: rotate(175deg);
+      -ms-transform: rotate(175deg);
+          transform: rotate(175deg);
+  cursor: pointer;
 }
 
 .contacts {
@@ -1052,6 +1123,20 @@ body {
     border: 2px solid #ffffff;
   }
 
+  .arrow-rightes:hover {
+    background: url("../img/arrow-active.png") 0 0 no-repeat;
+    -webkit-transform: rotate(-175deg);
+        -ms-transform: rotate(-175deg);
+            transform: rotate(-175deg);
+  }
+
+  .arrow-nextes:hover {
+    background: url("../img/arrow-active.png") 0 0 no-repeat;
+    -webkit-transform: rotate(0);
+        -ms-transform: rotate(0);
+            transform: rotate(0);
+  }
+
   .footer__button:hover {
     background-color: #fff;
     color: #000;
@@ -1255,6 +1340,11 @@ body {
     width: 245px;
     height: 55px;
     right: -47px;
+  }
+
+  .project {
+    padding-top: 50px;
+    padding-bottom: 100px;
   }
 
   .contacts__title {
@@ -1531,8 +1621,35 @@ body {
     width: 90px;
     height: 25px;
     right: -1px;
-    top: 40px;
+    top: 15px;
     border: 3px solid #ff8105;
+  }
+
+  .project__block-title {
+    margin-bottom: 30px;
+  }
+
+  .project {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+
+  .arrow-rightes {
+    background-size: cover;
+    top: 40%;
+    width: 22px;
+    height: 19px;
+  }
+
+  .arrow-nextes {
+    background-size: cover;
+    top: 40%;
+    width: 22px;
+    height: 19px;
+  }
+
+  .contacts {
+    padding-top: 40px;
   }
 
   .contacts__title {
@@ -1707,10 +1824,6 @@ body {
     right: -1px;
     top: 40px;
     border: 3px solid #ff8105;
-  }
-
-  .contacts {
-    padding-top: 50px;
   }
 
   .contacts__text {

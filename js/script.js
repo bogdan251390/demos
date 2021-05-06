@@ -31,10 +31,28 @@ var swiper = new Swiper(".hero__container", {
 });
 
 var swiper = new Swiper(".project__container", {
+   slidesPerView: 3,
    navigation: {
-      nextEl: ".arrow-right",
-      prevEl: ".arrow-next",
+      nextEl: ".arrow-rightes",
+      prevEl: ".arrow-nextes",
    },
+   breakpoints: {
+      // when window width is >= 320px
+      0: {
+         slidesPerView: 1,
+         spaceBetween: 20
+      },
+      // when window width is >= 480px
+      767: {
+         slidesPerView: 2,
+         spaceBetween: 30
+      },
+      // when window width is >= 640px
+      1000: {
+         slidesPerView: 3,
+         spaceBetween: 40
+      }
+   }
 });
 
 $(document).ready(function () {
