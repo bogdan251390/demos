@@ -4,6 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/aos.css">
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="css/style.min.css">
 
@@ -23,7 +24,7 @@
          </div>
          <div class="top-header__column top-header__column_two">
             <div class="top-header__contacts contacts-header">
-               <div class="contacts-header__number">
+               <div data-da=".menu__list,767,last" class="contacts-header__number">
                   <a href="" class="contacts-header__link">8 800 999-99-99</a>
                   <a href="" class="contacts-header__active">Звоните нам</a>
                </div>
@@ -34,7 +35,7 @@
             </div>
          </div>
          <div class="top-header__column">
-            <button class="button top-header__button">Связаться со специалистом</button>
+            <button id="popup" class="button top-header__button popup-link">Связаться со специалистом</button>
          </div>
       </div>
    </div>
@@ -48,10 +49,10 @@
             </div>
             <nav class="menu__body">
                <ul class="menu__list">
-                  <li><a href="" class="menu__link">О КОМПАНИИ</a></li>
-                  <li><a href="" class="menu__link">УСЛУГИ</a></li>
-                  <li><a href="" class="menu__link">ПРОЕКТЫ</a></li>
-                  <li><a href="" class="menu__link">КОНТАКТЫ</a></li>
+                  <li><a href="#about" class="menu__link">О КОМПАНИИ</a></li>
+                  <li><a href="#works" class="menu__link">УСЛУГИ</a></li>
+                  <li><a href="#project" class="menu__link">ПРОЕКТЫ</a></li>
+                  <li><a href="#contacts" class="menu__link">КОНТАКТЫ</a></li>
                </ul>
             </nav>
          </div>
@@ -80,45 +81,45 @@
 				</div>
 			</div>
 		</section>
-		<section class="works">
+		<section id="works" class="works">
 			<div class="works__container _container">
 				<div class="works__block block-works">
-					<div class="block-works__column">
+					<div class="block-works__column" data-aos="fade-right">
 						<div class="block-works__item item-work">
 							<img src="img/works/1.jpg" alt="">
 							<h2 class="item-work__title">кузовные работы</h2>
 							<button class="item-work__button">Подробнее <span></span></button>
 						</div>
 					</div>
-					<div class="block-works__column">
+					<div class="block-works__column" data-aos="fade-left">
 						<div class="block-works__item item-work">
 							<img src="img/works/2.jpg" alt="">
 							<h2 class="item-work__title">покраска авто в камере</h2>
 							<button class="item-work__button">Подробнее<span></span></button>
 						</div>
 					</div>
-					<div class="block-works__column">
+					<div class="block-works__column" data-aos="fade-right">
 						<div class="block-works__item item-work">
 							<img src="img/works/3.jpg" alt="">
 							<h2 class="item-work__title">Полировка фар</h2>
 							<button class="item-work__button">Подробнее<span></span></button>
 						</div>
 					</div>
-					<div class="block-works__column">
+					<div class="block-works__column" data-aos="fade-left">
 						<div class="block-works__item item-work">
 							<img src="img/works/4.jpg" alt="">
 							<h2 class="item-work__title">Реставрация и покраска дисков</h2>
 							<button class="item-work__button">Подробнее<span></span></button>
 						</div>
 					</div>
-					<div class="block-works__column">
+					<div class="block-works__column" data-aos="fade-right">
 						<div class="block-works__item item-work">
 							<img src="img/works/5.jpg" alt="">
 							<h2 class="item-work__title">Полировка ВСТАВОК САЛОНА</h2>
 							<button class="item-work__button">Подробнее<span></span></button>
 						</div>
 					</div>
-					<div class="block-works__column">
+					<div class="block-works__column" data-aos="fade-left">
 						<div class="block-works__item item-work">
 							<img src="img/works/6.jpg" alt="">
 							<h2 class="item-work__title">Детейлинг-мойка автомобиля</h2>
@@ -128,14 +129,14 @@
 				</div>
 			</div>
 		</section>
-		<section class="about">
+		<section id="about" class="about">
 			<div class="about__container _container">
 				<h2 class="section-title">О КОМПАНИИ</h2>
 				<div class="about__block block-about">
 					<div class="block-about__images">
-						<img class="block-about__image-s" src="img/about/1.jpg" alt="">
-						<img class="block-about__image-a" src="img/about/2.jpg" alt="">
-						<img class="block-about__image-b" src="img/about/3.jpg" alt="">
+						<img data-aos="zoom-in" class="block-about__image-s" src="img/about/1.jpg" alt="">
+						<img data-aos="zoom-in" class="block-about__image-a" src="img/about/2.jpg" alt="">
+						<img data-aos="zoom-in" class="block-about__image-b" src="img/about/3.jpg" alt="">
 					</div>
 					<div class="block-about__text">
 						<p><span>"VipPro" — Старейший Детейлинг-Центр В Новосибирске (Carnano.Ru)</span> При наличии этих
@@ -154,7 +155,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="project">
+		<section id="project" class="project">
 			<div class="project__container swiper-container">
 				<h2 class="project__titles">ПРОЕКТЫ</h2>
 				<div class="swiper-wrapper">
@@ -171,11 +172,11 @@
 				</div>
 			</div>
 		</section>
-		<section class="contacts">
+		<section id="contacts" class="contacts">
 			<div class="contacts__container _container">
 				<h2 class="contacts__title">КОНТАКТЫ</h2>
 				<div class="contacts__block block-contacts">
-					<div class="block-contacts__map">
+					<div class="block-contacts__map" data-aos="zoom-out-left">
 						<iframe
 							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2288.3712724956613!2d82.95577581623665!3d55.0016566803592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dfe617c9dac523%3A0x9ed285aa9bddd1d8!2z0YPQuy4g0JHQvtC70YzRiNC10LLQuNGB0YLRgdC60LDRjywgMTI1LCDQndC-0LLQvtGB0LjQsdC40YDRgdC6LCDQndC-0LLQvtGB0LjQsdC40YDRgdC60LDRjyDQvtCx0LsuLCA2MzAwODM!5e0!3m2!1sru!2sru!4v1620214411832!5m2!1sru!2sru"
 							width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -212,11 +213,12 @@
 		</section>
 		<section class="form">
 			<div class="form__container _container">
-				<h2 class="form__title">Остались вопросы? <br> Ответим на вопрос в течение 15 минут</h2>
+				<h2 data-aos="fade-down" class="form__title">Остались вопросы? <br> Ответим на вопрос в течение 15 минут
+				</h2>
 				<form class="form__content" action="#">
 					<div class="form__inputs">
-						<input type="text" class="form__input" placeholder="Ваш вопрос:">
-						<input type="text" class="form__input" placeholder="Телефон">
+						<input data-aos="fade-left" type="text" class="form__input" placeholder="Ваш вопрос:">
+						<input data-aos="fade-right" type="text" class="form__input" placeholder="Телефон">
 					</div>
 					<button class="button form__button">ОСТАВИТЬ ЗАЯВКУ</button>
 				</form>
@@ -237,10 +239,10 @@
          <div class="footer__column footer__column_two">
             <nav class="footer__menu">
                <ul class="footer__list">
-                  <li><a href="" class="footer__li">О компании</a></li>
-                  <li><a href="" class="footer__li">Услуги</a></li>
-                  <li><a href="" class="footer__li">Проекты</a></li>
-                  <li><a href="" class="footer__li">Контакты</a></li>
+                  <li><a href="#about" class="footer__li">О компании</a></li>
+                  <li><a href="#works" class="footer__li">Услуги</a></li>
+                  <li><a href="#project" class="footer__li">Проекты</a></li>
+                  <li><a href="#contacts" class="footer__li">Контакты</a></li>
                </ul>
             </nav>
          </div>
@@ -257,6 +259,25 @@
       </div>
    </div>
 </footer>
+
+		<div id="popup" class="popup">
+			<div class="popup__body">
+				<div class="popup__content">
+					<a href="#header" class="popup__close">&times</a>
+					<div class="popup__image">
+						<img src="img/popup/popup-1.jpg" alt="">
+					</div>
+					<form action="#" class="popup__form form">
+						<h3 class="form__title popup__title">Форма заявки</h3>
+						<p class="form__subtitle popup__subtitle">Подзаголовок заявки</p>
+						<input class="form__input popup__input" type="text" placeholder="Полное Имя">
+						<input class="form__input popup__input" type="text" placeholder="Номер телефона">
+						<input class="form__input popup__input" type="text" placeholder="E-mail">
+						<button class="button form__button popup__button">Отправить</button>
+					</form>
+				</div>
+			</div>
+		</div>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
 		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
