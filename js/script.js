@@ -44,6 +44,7 @@ $(document).ready(function () {
    })
    $('.menu__link').click(function (event) {
       $('.icon-menu,.menu__body').removeClass('_active');
+      $('body').removeClass('lock');
    });
 });
 
