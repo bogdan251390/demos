@@ -124,6 +124,12 @@ body {
   padding: 0px 10px;
 }
 
+._container2 {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0px 10px;
+}
+
 /* ОСНОВНОЙ БЛОК */
 
 @font-face {
@@ -554,6 +560,11 @@ body {
   left: 90px;
 }
 
+.project {
+  position: relative;
+  z-index: 1;
+}
+
 .project__container {
   text-align: center;
 }
@@ -642,13 +653,13 @@ body {
 .arrow-rightes {
   position: absolute;
   background: url("../img/arrow-right.png") 0 0 no-repeat;
-  z-index: 40;
+  z-index: 10;
   width: 37px;
   height: 33px;
   display: inline-block;
-  top: 50%;
-  right: -40px;
   cursor: pointer;
+  right: -40px;
+  top: 50%;
 }
 
 .arrow-nextes {
@@ -658,8 +669,8 @@ body {
   width: 37px;
   height: 33px;
   display: inline-block;
-  top: 50%;
   left: -40px;
+  top: 50%;
   -webkit-transform: rotate(175deg);
       -ms-transform: rotate(175deg);
           transform: rotate(175deg);
@@ -1162,6 +1173,10 @@ body {
     max-width: 1170px;
   }
 
+  ._container2 {
+    max-width: 1170px;
+  }
+
   .block-about__text::before {
     width: 480px;
   }
@@ -1179,6 +1194,10 @@ body {
 
 @media (max-width: 1170px) {
   ._container {
+    max-width: 970px;
+  }
+
+  ._container2 {
     max-width: 970px;
   }
 
@@ -1268,6 +1287,10 @@ body {
 
 @media (max-width: 991.98px) {
   ._container {
+    max-width: 750px;
+  }
+
+  ._container2 {
     max-width: 750px;
   }
 
@@ -1406,6 +1429,11 @@ body {
   ._container {
     max-width: none;
     padding: 0 20px;
+  }
+
+  ._container2 {
+    max-width: none;
+    padding: 0 30px;
   }
 
   .top-header__logo img {
@@ -1635,17 +1663,17 @@ body {
   }
 
   .arrow-rightes {
+    right: 0;
+    width: 25px;
+    height: 23px;
     background-size: cover;
-    top: 40%;
-    width: 22px;
-    height: 19px;
   }
 
   .arrow-nextes {
+    left: 0;
+    width: 25px;
+    height: 23px;
     background-size: cover;
-    top: 40%;
-    width: 22px;
-    height: 19px;
   }
 
   .contacts {
@@ -1822,7 +1850,7 @@ body {
     width: 90px;
     height: 25px;
     right: -1px;
-    top: 40px;
+    top: 15px;
     border: 3px solid #ff8105;
   }
 
